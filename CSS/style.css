@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 .body{
   margin: 0;
 }
 :root {
   font-style: normal;
   font-family: "Montserrat", sans-serif;
-
+  font-size: 62.5%;
+  --text1:#737373;
+  --front1: #E8E8E8;
+  --text2:#252b42;
+  --front2:#ff7b47;
+  --border: #bdbdbd;
+  --border2:#0D5C63;
 }
 li {
   list-style-type: none;
@@ -19,7 +25,7 @@ a {
 }
 p {
   text-align: center;
-  color: #737373;
+  color: var(--text1);
   font-weight: 500;
   font-size: 2rem;
   line-height: 150%;
@@ -31,7 +37,7 @@ div{
   padding: 35px 40px;
 
 height: 193px;
-border: 1px solid #E8E8E8;
+border: 1px solid var(--front1);
 margin-bottom: 30px;
 margin-left: 5%;
 margin-right: 5%;
@@ -50,14 +56,14 @@ border-radius: 5px;
   margin-bottom: 0px;
 }
 h2 {
-  color: #252b42;
+  color: var(--text2);
   font-weight: 700;
   font-size: 4rem;
   line-height: 142%;
   text-align: center;
 }
 h3 {
-  color: #252b42;
+  color: var(--text2);
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 150%;
@@ -65,7 +71,7 @@ h3 {
   margin-left: 63px;
 }
 #head_a {
-  color: #252b42;
+  color:var(--text2);
   font-style: normal;
   font-weight: 700;
   font-size: 2.4rem;
@@ -74,7 +80,7 @@ h3 {
   padding-left: 35px;
 }
 .navigation a {
-  color: #737373;
+  color: var(--text1);
   font-weight: 400;
   font-size: 3rem;
   line-height: 150%;
@@ -84,7 +90,7 @@ h3 {
   width: 100%;
 }
 #butt1 {
-  background: #ff7b47;
+  background: var(--front2);
   color: white;
   width: 185px;
   height: 48px;
@@ -114,7 +120,7 @@ h3 {
 .forms1 input {
   width: 286px;
   height: 50px;
-  border: 2px solid #bdbdbd;
+  border: 2px solid var(--border);
   border-radius: 5px;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -122,13 +128,13 @@ h3 {
 .forms2 textarea {
   width: 286px;
   height: 140px;
-  border: 2px solid #bdbdbd;
+  border: 2px solid var(--border);
   border-radius: 5px;
   margin-bottom: 0px;
   margin-top: 20px;
 }
 #butt2 {
-  background: #ff7b47;
+  background: var(--front2);
   color: white;
   font-weight: 700;
   font-size: 1.4rem;
@@ -147,7 +153,7 @@ margin-top: 125px;
 text-align: left;
 }
 #butt3 {
-    background: #ff7b47;
+    background: var(--front2);
     color: white;
     font-weight: 700;
     font-size: 1.4rem;
@@ -197,7 +203,7 @@ text-align: left;
 .forms3 input {
     width: 321px;
     height: 58px;
-    border: 2px solid #bdbdbd;
+    border: 2px solid var(--border);
     border-radius: 5px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -205,7 +211,7 @@ text-align: left;
     margin: 0px auto;
   }
   #butt4 {
-    background: #ff7b47;
+    background: var(--front2);
     color: white;
     font-weight: 700;
     font-size: 1.4rem;
@@ -214,12 +220,12 @@ text-align: left;
     height: 58px;
     border: 0; 
     border-radius: 5px;
-color: #FFFFFF;}
+color: white;}
 #pp{
     font-weight: 400;
 font-size: 1.2rem;
 line-height: 28px;
-color: #FFFFFF;
+color: white;
 text-align:left;
 margin: 0px auto;
 }
@@ -230,7 +236,7 @@ margin: 0px auto;
    
     padding: 10px;
     text-align: center;
-    border: 1px solid #0D5C63;
+    border: 1px solid var(--border2);
     border-radius: 25px;
     font-weight: 700;
     font-size: 1.4rem;
