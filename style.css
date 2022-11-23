@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.body{
+  margin: 0;
+}
 :root {
   font-style: normal;
   font-family: "Montserrat", sans-serif;
@@ -24,7 +27,17 @@ p {
 nav {
   margin-top: 83px;
 }
+div{
+  padding: 35px 40px;
 
+height: 193px;
+border: 1px solid #E8E8E8;
+margin-bottom: 30px;
+margin-left: 5%;
+margin-right: 5%;
+
+
+}
 .h {
   background-image: url(/the_img.png);
   height: 10px;
