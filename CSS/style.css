@@ -137,7 +137,7 @@ h3 {
 .section2 div {
   box-sizing: border-box;
   max-width: 330px;
-  max-height: 200px;
+  min-height: 200px;
   margin-left: 43px;
  }
 .section2 h3 {
@@ -175,7 +175,7 @@ h3 {
   top: 25px;
 }
 .section2 {
-  max-height: 1720px;
+  min-height: 1720px;
   background-color: white;
   padding-bottom: 16.0rem;
 }
@@ -194,7 +194,7 @@ h3 {
 }
 
 .section3 {
-max-height: 921px;
+min-height: 921px;
 background: var(--front5);
 padding-bottom: 12.6rem;
 }
@@ -209,7 +209,7 @@ padding-bottom: 12.6rem;
   padding-bottom: 4.5rem;
 }
 .section4{
-max-height: 1230px;
+min-height: 1230px;
 color: var(--front3);
 }
 .section4 h2{
@@ -226,7 +226,7 @@ color: var(--front3);
   background-color: white;
  box-sizing: border-box;
     max-width: 330px;
-    max-height: 250px;
+    min-height: 250px;
     margin-left: 43px;
 }
 .section4_p2 {
@@ -242,7 +242,7 @@ color: var(--front3);
 .section5 {
   background-color: white;
   padding-bottom: 4.0rem;
-  max-height: 1200px;
+  min-height: 1200px;
 }
 .pforms p {
   margin: 0px auto;
@@ -306,7 +306,7 @@ color: var(--front3);
   margin-top: 40px;
 }
 .section7{
-  max-height: 1300px;
+  min-height: 1300px;
   padding-top: 9.3rem; 
   background: var(--front6);
   padding: 7.0rem 4.6rem;
