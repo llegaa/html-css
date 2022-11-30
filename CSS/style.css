@@ -364,7 +364,7 @@ color: var(--front3);
 }
 .forms3 input {
   box-sizing: border-box;
-  width: 321px;
+  width: 200px;
   height: 60px;
   border: 2px solid var(--border);
   border-radius: 5px 0px 0px 5px;
