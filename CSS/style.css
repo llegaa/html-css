@@ -1,24 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-.body{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+html {
+  background: var(--front3);
+}
+.body {
   margin: 0;
 }
 :root {
   font-style: normal;
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
-  --text1:#737373;
-  --front1: #E8E8E8;
-  --text2:#252b42;
-  --front2:#ff7b47;
+  --text1: #737373;
+  --front1: #e8e8e8;
+  --text2: #252b42;
+  --front2: #ff7b47;
   --border: #bdbdbd;
-  --border2:#0D5C63;
+  --border2: #0d5c63;
+  --front3: #fafafa;
+  --front4: #f6f6f6;
+  --front5: #F3F3F3;
+  --front6: #252B42;
+}
+header {
+  background: var(--front4);
+  height: 530px;
 }
 li {
   list-style-type: none;
   text-decoration: none;
 }
 ul {
-  padding-left: 0%;
+  padding-left: 0rem;
 }
 a {
   text-decoration: none;
@@ -31,24 +42,19 @@ p {
   line-height: 150%;
 }
 nav {
-  margin-top: 83px;
+  margin-top: 140px;
+  box-sizing: border-box;
 }
-div{
-  padding: 35px 40px;
-
-height: 193px;
-border: 1px solid var(--front1);
-margin-bottom: 30px;
-margin-left: 5%;
-margin-right: 5%;
-border-radius: 5px;
-
-
+div {
+  padding: 3.5rem 4.0rem;
+  border: 1px solid var(--front1);
+  margin-bottom: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
 }
+
 .h {
-  background-image: url(/the_img.png);
-  height: 10px;
-  width: 600px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -71,13 +77,32 @@ h3 {
   margin-left: 63px;
 }
 #head_a {
-  color:var(--text2);
-  font-style: normal;
+  color: var(--text2);
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 133%;
-  padding-top: 23px;
-  padding-left: 35px;
+  padding-top: 3.5rem;
+  position: relative;
+  top: 35px;
+  margin-left: 35px;
+}
+.image0 {
+  border: 0px;
+}
+.img_butt1 {
+  position: absolute;
+  right: 145px;
+  margin-top: 45px;
+}
+.img_butt2 {
+  position: absolute;
+  right: 95px;
+  margin-top: 45px;
+}
+.img_butt3 {
+  position: absolute;
+  right: 40px;
+  margin-top: 45px;
 }
 .navigation a {
   color: var(--text1);
@@ -88,6 +113,39 @@ h3 {
 .navigation li {
   text-align: center;
   width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.section1 {
+  text-align: center;
+  margin: 0%;
+  height: 650px;
+  padding: 6.9rem 4.0rem;
+}
+.section1 h2 {
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;}
+
+.section1 p {
+  padding-top: 4.0rem;
+  padding-bottom: 4.0rem;
+  max-height: 500px;
+  margin: 0 auto;
+  display: block;}
+
+.section2 div {
+  box-sizing: border-box;
+  max-width: 330px;
+  max-height: 200px;
+  margin-left: 43px;
+ }
+.section2 h3 {
+  position: relative;
+  top: 12px;
+}
+.section2 img{
+  float:left;
 }
 #butt1 {
   background: var(--front2);
@@ -102,22 +160,95 @@ h3 {
   display: block;
   border: 0;
 }
-
-.p3 p {
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 143%;
-  text-align: left;
-}
-.p4 p {
+.buttonlink {
+  display: flexbox;
+  width: 157px;
+  height: 48px;
+  padding: 1.0rem;
+  text-align: center;
+  border: 1px solid var(--border2);
+  border-radius: 25px;
   font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 150%;
+  font-size: 1.4rem;
+  line-height: 200%;
+  position: relative;
+  top: 25px;
 }
-.pforms p{
+.section2 {
+  max-height: 1720px;
+  background-color: white;
+  padding-bottom: 16.0rem;
+}
+.section2 h2 {
+  padding-top: 7.5rem;
+}
+.section2 p {
+  max-width: 305px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 1.0rem;
+  padding-bottom: 4.5rem;
+}
+#div {
+  margin-bottom: 0%;
+}
+
+.section3 {
+max-height: 921px;
+background: var(--front5);
+padding-bottom: 12.6rem;
+}
+.section3 h2{
+  padding-top: 10.0rem;
+}
+.section3 p{
+  max-width: 305px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 1.0rem;
+  padding-bottom: 4.5rem;
+}
+.section4{
+max-height: 1230px;
+color: var(--front3);
+}
+.section4 h2{
+  padding-top: 7.5rem;
+}
+.section4_p1{
+  max-width: 305px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 1.0rem;
+  padding-bottom: 6.0rem;
+}
+.section4 div{
+  background-color: white;
+ box-sizing: border-box;
+    max-width: 330px;
+    max-height: 250px;
+    margin-left: 43px;
+}
+.section4_p2 {
+  padding-bottom: 2.0rem;
+}
+.section4_img{
+  margin-bottom: 20px;
+}
+.section4_img2{
+  float:left; 
+  margin-right: 15px;
+}
+.section5 {
+  background-color: white;
+  padding-bottom: 4.0rem;
+  max-height: 1200px;
+}
+.pforms p {
   margin: 0px auto;
 }
 .forms1 input {
+  box-sizing: border-box;
   width: 286px;
   height: 50px;
   border: 2px solid var(--border);
@@ -126,6 +257,7 @@ h3 {
   margin-bottom: 20px;
 }
 .forms2 textarea {
+  box-sizing: border-box;
   width: 286px;
   height: 140px;
   border: 2px solid var(--border);
@@ -141,107 +273,145 @@ h3 {
   line-height: 200%;
   width: 286px;
   height: 40px;
-  border: 0; 
+  border: 0;
   border-radius: 5px;
   margin: 0 auto;
   display: block;
+  margin-top: 40px;
 }
-#h2{
-    font-size: 2.4rem;
-line-height: 133%;
-margin-top: 125px;
-text-align: left;
+.section6 p{
+ max-width:249px;
+ margin-left:60px;
+ margin-top: 10px;
+}
+#h2 {
+  font-size: 2.4rem;
+  line-height: 133%;
+  margin-top: 125px;
+  text-align: left;
+  padding-left: 6.0rem;
 }
 #butt3 {
-    background: var(--front2);
-    color: white;
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 200%;
-    width: 283px;
-    height: 40px;
-    border: 0; 
-    border-radius: 5px;
-    margin: 0 auto;
-    display: block;
+  background: var(--front2);
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 200%;
+  width: 283px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 40px;
 }
-#link{
-    font-size: 2.4rem;
-    line-height: 133%; 
-    color: white;
-    text-align: start;
-    text-align: left;
-    width: 100%;
+.section7{
+  max-height: 1300px;
+  padding-top: 9.3rem; 
+  background: var(--front6);
+  padding: 7.0rem 4.6rem;
 }
-.image2{
-    margin-left: 20px;
-    margin-top: 50px;
-}
-.hh h3{
-    color: white;
-    font-weight: 700;
+.section7 h3 {
+  color: white;
+  font-weight: 700;
   font-size: 1.6rem;
   line-height: 150%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.aa a{
-    color: white;
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 171%;
-    
+.section7 a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 171%;
 }
-.lii li{
-    margin-top: 10px;
+.section7 li {
+  margin-top: 10px;
 }
-#h33{
-    font-weight: 700;
+.section7 ul{
+  margin-bottom: 30px;
+}
+.p3 p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 143%;
+  text-align: left;
+}
+.p4 p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+
+#link {
+  font-size: 2.4rem;
+  line-height: 133%;
+  color: white;
+  text-align: start;
+  text-align: left;
+  width: 100%;
+}
+.image2 {
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+#h33 {
+  font-weight: 700;
   font-size: 1.6rem;
   line-height: 150%;
 }
 .forms3 input {
-    width: 321px;
-    height: 58px;
-    border: 2px solid var(--border);
-    border-radius: 5px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    border: 0px;
-    margin: 0px auto;
-  }
-  #butt4 {
-    background: var(--front2);
-    color: white;
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 200%;
-    width: 117px;
-    height: 58px;
-    border: 0; 
-    border-radius: 5px;
-color: white;}
-#pp{
-    font-weight: 400;
-font-size: 1.2rem;
-line-height: 28px;
-color: white;
-text-align:left;
-margin: 0px auto;
+  box-sizing: border-box;
+  width: 321px;
+  height: 60px;
+  border: 2px solid var(--border);
+  border-radius: 5px 0px 0px 5px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 0px;
+  margin: 0px auto;
 }
-.buttonlink{ 
-    display:flexbox;
-    width: 157px;
-    height: 48px;
-   
-    padding: 10px;
-    text-align: center;
-    border: 1px solid var(--border2);
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 200%;
+#butt4 {
+  background: var(--front2);
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 200%;
+  width: 117px;
+  height: 60px;
+  border: 0;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+  position: relative;
+  right: 3px;
 }
-.marks p{
-margin: 0px auto;
+#pp {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 28px;
+  color: white;
+  text-align: left;
+  margin: 0px auto;
 }
+
+.h_make {
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 6.0rem;
+  padding-bottom: 4.0rem;
+}
+.h_contact {
+  margin-top: 128px;
+  text-align: left;
+  margin-bottom: 0px;
+  padding-left: 6.0rem;
+  padding-top: 11.5rem;
+}
+
+
+
+
+
