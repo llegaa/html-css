@@ -2,9 +2,7 @@
 html {
   background: var(--front3);
 }
-.body {
-  margin: 0;
-}
+
 :root {
   font-style: normal;
   font-family: "Montserrat", sans-serif;
@@ -46,7 +44,7 @@ nav {
   box-sizing: border-box;
 }
 div {
-  padding: 3.5rem 4.0rem;
+  margin-top: 35px;
   border: 1px solid var(--front1);
   margin-bottom: 30px;
   border-radius: 5px;
@@ -122,6 +120,10 @@ h3 {
   right: 40px;
   margin-top: 45px; */
 }
+header{
+  padding-bottom: 10rem;
+  padding-top: 3.5rem;
+}
 .navigation a {
   color: var(--text1);
   font-weight: 400;
@@ -131,14 +133,12 @@ h3 {
 .navigation li {
   text-align: center;
   width: 100%;
-  height: 45px;
   margin-bottom: 30px;
 }
 .section1 {
   text-align: center;
   margin: 0%;
-  height: 650px;
-  padding: 6.9rem 4.0rem;
+  padding: 6.9rem 4.0rem 10rem;
 }
 .section1 h2 {
   max-width: 250px;
@@ -146,11 +146,11 @@ h3 {
   display: block;}
 
 .section1 p {
-  padding-top: 4.0rem;
-  padding-bottom: 4.0rem;
   max-height: 500px;
   margin: 0 auto;
-  display: block;}
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;}
 
 .section2 div {
   box-sizing: border-box;
@@ -196,52 +196,47 @@ h3 {
   top: 25px;
 }
 .section2 {
-  min-height: 1720px;
-  background-color: white;
+  padding-top: 7.5rem;
+  padding-bottom:16rem;
+   background-color: white;
   padding-bottom: 16.0rem;
 }
-.section2 h2 {
-  padding-top: 7.5rem;
-}
+
 .section2 p {
   max-width: 305px;
   margin: 0 auto;
   display: block;
-  padding-top: 1.0rem;
-  padding-bottom: 4.5rem;
+  margin-top: 10px;
+  margin-bottom: 45px;
 }
 #div {
   margin-bottom: 0%;
 }
 
 .section3 {
-min-height: 921px;
+  padding-top: 10rem;
+  padding-bottom: 17.5rem;
 background: var(--front5);
 padding-bottom: 12.6rem;
-}
-.section3 h2{
-  padding-top: 10.0rem;
 }
 .section3 p{
   max-width: 305px;
   margin: 0 auto;
   display: block;
-  padding-top: 1.0rem;
-  padding-bottom: 4.5rem;
+  margin-top: 10px;
+  margin-bottom: 45px;
 }
 .section4{
-min-height: 1230px;
+padding-top: 7.5rem;
+padding-bottom: 10rem;
 color: var(--front3);
-}
-.section4 h2{
-  padding-top: 7.5rem;
 }
 .section4_p1{
   max-width: 305px;
   margin: 0 auto;
   display: block;
-  padding-top: 1.0rem;
-  padding-bottom: 6.0rem;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 .section4 div{
     background-color: white;
@@ -254,7 +249,7 @@ color: var(--front3);
     margin-bottom: 3em;
 }
 .section4_p2 {
-  padding-bottom: 2.0rem;
+  margin-bottom: 20px;
 }
 .section4_img{
   margin-bottom: 20px;
@@ -265,6 +260,7 @@ color: var(--front3);
 }
 .section5 {
   background-color: white;
+  padding-top: 11.5rem;
   padding-bottom: 4.0rem;
   min-height: 1200px;
 }
@@ -277,6 +273,7 @@ form{
 .pforms p {
   margin: 0px auto;
 }
+
 .forms1 input {
   box-sizing: border-box;
   width: 286px;
@@ -285,6 +282,7 @@ form{
   border-radius: 5px;
   margin-top: 0px;
   margin-bottom: 20px;
+  padding-left: 2.0rem;
 }
 .forms2 textarea {
   box-sizing: border-box;
@@ -294,6 +292,7 @@ form{
   border-radius: 5px;
   margin-bottom: 0px;
   margin-top: 20px;
+  padding-left: 2.0rem;
 }
 #butt2 {
   background: var(--front2);
@@ -341,8 +340,8 @@ form{
   padding: 1.5rem 7.5rem 1.5rem 7.5rem;
 }
 .section7{
-  min-height: 1300px;
   padding-top: 9.3rem; 
+  padding-bottom: 7rem;
   background: var(--front6);
   padding: 7.0rem 4.6rem;
 }
@@ -401,12 +400,16 @@ form{
   box-sizing: border-box;
   width: 200px;
   height: 60px;
+  padding-left: 20rem;
   border: 2px solid var(--border);
   border-radius: 5px 0px 0px 5px;
   margin-top: 0px;
   margin-bottom: 20px;
   border: 0px;
   margin: 0px auto;
+  padding-left: 2.0rem;
+  color: white;
+  background-color: var(--front4)
 }
 #butt4 {
   background: transperent;
@@ -437,15 +440,14 @@ form{
   text-align: left;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-left: 6.0rem;
-  padding-bottom: 4.0rem;
+  margin-left: 6.0rem;
+  margin-bottom: 40px;
 }
-.h_contact {
-  margin-top: 128px;
+#h_contact {
   text-align: left;
   margin-bottom: 0px;
-  padding-left: 6.0rem;
-  padding-top: 11.5rem;
+  margin-left: 6.0rem;
+
 }
 .sr-only {
   position: absolute;
@@ -464,7 +466,8 @@ form{
   margin-left: 0;
   padding-left: 0;
   padding-top: 10;
-  padding-bottom: 100px;
+  margin-bottom: 110px;
+
 }
 .video{
  margin: 0 auto;
