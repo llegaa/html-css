@@ -302,7 +302,8 @@ header{
 .flex7{
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  justify-content: space-between;
+ gap: 30px;
   
 }
 
