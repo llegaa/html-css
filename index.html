@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet"  href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/reseter.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +10,9 @@
   </head>
 
   <body>
-    <header style="background: #f6f6f6">
+  
+    <header class="background1" >
+    
       <div class="flex1 wrapper">
         <a id="head_a" class="flex1_1" href="">Concultal</a>
         <a class="head" href="">Home</a>
@@ -41,22 +43,36 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <section class="section1">
+      <section class="section1 section1-sr-only1">
         <h1 class="sr-only">MAIN</h1>
         <h2>First-Class Business Consultant</h2>
-        <p>
+        <p class="s1p">
           We know how large objects will act, but things on a small scale just
           do not act that way.
         </p>
 
         <div class="flex2">
-          <p><button id="butt1">Get Quote Now</button></p>
-          <p><a class="buttonlink" href="">Learn More</a></p>
-        </div>
+          <button style="box-shadow:5px 5px 10px 2px black;" class="flex2_1" id="butt1">Get Quote Now</button>
+          <a class="buttonlink" href="">Learn More</a>
+       
+      </section>
+    </header>
+    <main>
+      <section class="section1 section1-sr-only">
+        <h1 class="sr-only">MAIN</h1>
+        <h2>First-Class Business Consultant</h2>
+        <p class="s1p">
+          We know how large objects will act, but things on a small scale just
+          do not act that way.
+        </p>
+
+        <div class="flex2">
+          <button class="flex2_1" id="butt1">Get Quote Now</button>
+          <a class="buttonlink" href="">Learn More</a>
+       
       </section>
       <section class="p3 section2">
+      </div>
         <h2>Industry</h2>
         <p style="text-align: center">
           Problems trying to resolve the conflict between the two major realms
@@ -64,9 +80,9 @@
         </p>
         <div class="flex3 wrapper">
           <div class="section2_div">
-            <div>
+            <div class="flex8">
               <img src="картинки/сумка.png" width="48" height="48" alt="" />
-              <h3 class="flex4-2">Business & Finance</h3>
+              <h3 >Business & Finance</h3>
             </div>
             <p>
               the quick fox jumps over the lazy dog the quick fox jumps over the
@@ -74,44 +90,59 @@
             </p>
           </div>
           <div class="section2_div">
+            <div class="flex8">
             <img src="картинки/магазин.png" width="48" height="48" alt="" />
             <h3>Consumer Products</h3>
+          </div>
             <p>
               the quick fox jumps over the lazy dog the quick fox jumps over the
               lazy dog
             </p>
+          
           </div>
           <div class="section2_div">
+            <div class="flex8">
             <img src="картинки/книга.png" width="48" height="48" alt="" />
             <h3>Environmental</h3>
+          </div>
             <p>
               the quick fox jumps over the lazy dog the quick fox jumps over the
               lazy dog
             </p>
+          
           </div>
           <div class="section2_div">
+            <div class="flex8">
             <img src="картинки/люди.png" width="48" height="48" alt="" />
             <h3>Business & Finance</h3>
+          </div>
             <p>
               the quick fox jumps over the lazy dog the quick fox jumps over the
               lazy dog
             </p>
+          
           </div>
           <div class="section2_div">
+            <div class="flex8">
             <img src="картинки/схема.png" width="48" height="48" alt="" />
             <h3>Consumer Products</h3>
+          </div>
             <p>
               the quick fox jumps over the lazy dog the quick fox jumps over the
               lazy dog
             </p>
+          
           </div>
           <div class="section2_div" id="div">
+            <div class="flex8">
             <img src="картинки/медаль.png" width="48" height="48" alt="" />
             <h3>Environmental</h3>
+          </div>
             <p>
               the quick fox jumps over the lazy dog the quick fox jumps over the
               lazy dog
             </p>
+          
           </div>
         </div>
       </section>
@@ -130,9 +161,9 @@
           src=""
         ></video>
       </section>
-      <section class="section4 p3">
+      <section class="section4">
         <h2>What Client Say</h2>
-        <p class="section4_p1 section4_p" style="text-align: center">
+        <p  id="sec4p" class="section4_p1 section4_p" style="text-align: center">
           Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics
         </p>
@@ -151,7 +182,7 @@
                 your financial goal.
               </p>
             </blockquote>
-            <div>
+            <div class="flex8">
               <img
                 class="section4_img2"
                 src="картинки/чел1.png"
@@ -159,8 +190,8 @@
                 height="50"
                 alt=""
               />
-              <p>Regina Miles</p>
-              <p>Designer</p>
+              <div><p class="section4-1">Regina Miles</p>
+              <p class="section4-2">Designer</p></div>
             </div>
           </div>
           <div class="section4_div">
@@ -177,6 +208,7 @@
                 your financial goal.
               </p>
             </blockquote>
+            <div class="flex8">
             <img
               class="section4_img2"
               src="картинки/чел2.png"
@@ -184,8 +216,12 @@
               height="50"
               alt=""
             />
-            <p>Regina Miles</p>
-            <p>Designer</p>
+            <div>
+            <p class="section4-1" >Regina Miles</p>
+            <p class="section4-2">Designer</p>
+          </div>
+          </div>
+            
           </div>
           <div class="section4_div">
             <blockquote>
@@ -201,6 +237,7 @@
                 your financial goal.
               </p>
             </blockquote>
+            <div class="flex8">
             <img
               class="section4_img2"
               src="картинки/чел3.png"
@@ -208,16 +245,19 @@
               height="50"
               alt=""
             />
-            <p>Regina Miles</p>
-            <p>Designer</p>
+            <div>
+            <p class="section4-1">Regina Miles</p>
+            <p class="section4-2">Designer</p>
+          </div>
+          </div>
           </div>
         </div>
       </section>
       <section class="section5 f_section5 form1">
-        <section class="section5_p">
+        <div class="section5_p">
           <p id="h_contact" class="p4">Contact Us</p>
           <h2 class="h_make">Make an Appointment</h2>
-        </section>
+        </div>
         <form action="URL" class="forms1 forms2">
           <div class="flex4">
             <p>
@@ -244,7 +284,7 @@
           </p>
           <button id="butt2">Book Appointment</button>
         </form>
-
+      </section>
         <section class="p3 section6 flex5">
           <div>
             <h2 id="h2">Consulting Agency For Your Business</h2>
@@ -252,7 +292,7 @@
           </div>
           <button id="butt3">Contact Us</button>
         </section>
-      </section>
+      
     </main>
     <footer class="section7 forms3">
       <h2 class="sr-only">FOOTER</h2>
