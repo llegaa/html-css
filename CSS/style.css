@@ -3,7 +3,12 @@ html {
   background-color: var(--front3);
 
 }
+html, body { height: 100%;}
 
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
 :root {
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
@@ -19,6 +24,79 @@ html {
   --front5: #f3f3f3;
   --front6: #252b42;
   --front7: #f7f7f7;
+  --text4: #232324;
+}
+p::selection {
+  color: white;
+  background: var(--front2)
+}
+a::selection{
+  color: white;
+  background: var(--front2)
+}
+h2::selection{
+  color: white;
+  background: var(--front2)
+}
+button::selection{
+  color:var(--front2);
+  background:  white;
+}
+img::selection{
+  color: white;
+  background: var(--front2);
+}
+span::selection{
+  color: white;
+  background: var(--front2)
+}
+h3::selection{
+  color: white;
+  background: var(--front2);
+}
+
+button:hover {
+  background-color: var(--front6);
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+button:active{
+  color: black;
+  transition: 0.7s;
+}
+a:hover{
+  text-decoration: none;
+  color: var(--front2);
+}
+.aaa:hover {color: var(--front2);}
+a:active {
+  color: black;
+   transition: 0.7s; 
+}
+input:focus {
+  box-shadow: 0 0 20px 2px var(--front2);
+  transition: 0.7s;
+}
+textarea:focus{
+  box-shadow: 0 0 20px 2px var(--front2);
+  transition: 0.7s; 
+}
+select:focus {
+  transition: 0.7s;
+  box-shadow: 0 0 20px 2px var(--front2);
+}
+
+input::placeholder {
+  color: var(--front2);
+  font-style: italic;
+}
+textarea::placeholder{
+  color: var(--front2);
+  font-style: italic;
+}
+option::placeholder{
+  color: var(--front2);
+  font-style: italic;
 }
 
 li {
@@ -72,7 +150,7 @@ h3 {
   line-height: 150%;
  
 }
-#head_a {
+.head_a {
   color: var(--text2);
   font-weight: 700;
   font-size: 2.4rem;
@@ -90,23 +168,30 @@ h3 {
   margin-top: 40px;
  
 }
-.flex1 a {
+.head{
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 171%;
   color: var(--text1);
 }
+/* .flex1 a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 171%;
+  color: var(--text1);
+} */
 .flex1_1 {
   flex-grow: 5;
   border: 0px;
 }
 .flex1_2 {
-  justify-content: flex-end;
-}
-.flex1_3 {
+  justify-items: flex-end;
   flex-grow: 1;
 }
-
+ .flex1_3 {
+  flex-grow: 1;
+}
+ 
 .wrapper {
   max-width: 1170px;
   margin-left: auto;
@@ -156,7 +241,7 @@ header {
   margin-bottom: 40px;
 }
 
-#butt1 {
+.butt1 {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 200%;
@@ -166,6 +251,7 @@ header {
   color: white;
   padding: 1rem 3.6rem 1rem 3.6rem;
   border-radius: 25px;
+  box-shadow:5px 5px 10px 2px var(--front6);
 }
 .buttonlink {font-weight: 700;
   font-size: 1.4rem;
@@ -239,7 +325,7 @@ header {
 .flex6-2 {
   flex-grow: 1;
 }
-
+ 
  
 .img2 img {
   margin-right: 20px;
@@ -247,7 +333,7 @@ header {
 .section3 {
   padding-top: 10rem;
   padding-bottom: 17.5rem;
-  background: linear-gradient(to bottom, var(--front5) 60%, #040225 60%);
+  background: linear-gradient(to bottom, var(--front5) 60%, var(--front6) 60%);
   /* background: var(--front5); */
   padding-bottom: 12.6rem;
 }
@@ -338,7 +424,7 @@ text-align: left;
   margin-top: 20px;
   padding-left: 2rem;
 }
-#butt2 {
+.butt2 {
   background: var(--front2);
   color: white;
   font-weight: 700;
@@ -367,7 +453,7 @@ text-align: left;
   padding-left: 6rem;
   padding-right: 6rem;
 }
-#butt3 {
+.butt3 {
   background: var(--front2);
   color: white;
   font-weight: 700;
@@ -395,12 +481,13 @@ text-align: left;
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.section7 a {
+.aaa {
   color: white;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 171%;
 }
+
 .section7 li {
   margin-top: 10px;
 }
@@ -447,7 +534,7 @@ text-align: left;
   color: white;
   background-color: var(--front4);
 }
-#butt4 {
+.butt4 {
   background: transperent;
 
   background: var(--front2);
@@ -502,7 +589,7 @@ text-align: left;
   display: block;
   margin-top: 60px;
 }
-span {
+  .span span{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -513,7 +600,7 @@ span {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} 
 
 @media screen and (min-width: 700px) {
  header{ background-image: url(../картинки/cover.jpg);
@@ -676,3 +763,107 @@ margin-bottom: 25px;}
     gap: 3rem; 
   }
 }
+.form_html {
+background-color: var(--front3);
+padding-top: 3rem;
+padding-bottom: 3rem;
+margin: 0 auto;
+    display: block;
+}
+.form_html_flex {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap */;
+  gap: 2rem;
+  
+  padding: 1rem 1rem 1rem 1rem;
+  
+    margin-bottom: 2rem;
+}
+.form_html_flex1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.form_html_flex input{
+  box-sizing: border-box;
+  width: 286px;
+  height: 50px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  padding-left: 2rem; 
+  
+    margin: 0 auto;
+    display: block;
+} 
+.form_html_flex select {
+  box-sizing: border-box;
+  width: 286px;
+  height: 50px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  padding-left: 2rem; 
+  color: var(--front2);
+  font-style: italic;
+    margin: 0 auto;
+    display: block;
+}
+.form_html legend{
+  margin-top: 10px;
+  color: var(--front2);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 171%;
+  
+}
+
+.form_html fieldset{
+  border: 1px solid var(--border2);
+  border-radius: 25px;
+  padding-bottom: 3rem;
+}
+.flex_butt {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: flex-end;
+  /*align-content: space-around;*/
+  gap: 2rem;
+}
+.button {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 200%;
+  border: 0;
+  box-sizing: border-box;
+ /*  background: var(--front2); */
+  color: white;
+ /*  width: 200px; 
+  padding: 1rem 5rem 1rem 5rem;*/
+  border-radius: 20px;
+  background-color: transparent;
+}
+select{
+  font-weight: 600;
+font-size: 1.4rem;
+line-height: 171%;
+color: #BDBDBD;
+}
+input{
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 171%;
+  color: #BDBDBD;
+}
+textarea {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 171%;
+  color: #BDBDBD;
+}
+.form_html form{
+    margin:0 auto;
+    display: block;
+    margin: inherit;
+  }
